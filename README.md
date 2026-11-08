@@ -16,7 +16,7 @@ How and why: [docs/findings.md](docs/findings.md). Why DS games should be DSiWar
 
 System Settings > Data Management on the tested console: the DSiWare list at page 26 of 26 (stock stops at 8 pages of 5). Titles blurred.
 
-![Data Management overview](docs/screenshots/data-management-26-pages-top.png) ![DSiWare list at page 26 of 26](docs/screenshots/data-management-26-pages-bottom.png)
+![DSiWare list at page 26 of 26](docs/screenshots/data-management-26-pages-bottom.png)
 
 ## Supported dumps
 
