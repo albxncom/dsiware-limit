@@ -12,6 +12,12 @@ This is a proof of concept, not a release. There are no prebuilt patches: you bu
 
 How and why: [docs/findings.md](docs/findings.md). Why DS games should be DSiWare forwarders at all (17 s against 42 to 61 s per launch): [docs/ds-launch-paths.md](docs/ds-launch-paths.md).
 
+## Screenshots
+
+System Settings > Data Management on the tested console: the DSiWare list at page 26 of 26 (stock stops at 8 pages of 5). Titles blurred.
+
+![Data Management overview](docs/screenshots/data-management-26-pages-top.png) ![DSiWare list at page 26 of 26](docs/screenshots/data-management-26-pages-bottom.png)
+
 ## Supported dumps
 
 | Role | Target | Dump SHA-256 (decrypted `.code`) | Console test |
@@ -89,7 +95,7 @@ Needs Python 3.9 or newer, standard library only.
 
 ## Tested
 
-New 3DS XL, EUR 11.17.0-50E, Luma3DS, N = 256, 130 DSiWare, 2026-11-08: all icons (also in folders and on the top screen), Internet Browser, Miiverse and returning from it, sleep mode, theme shuffle with reboot, fast scrolling, a 3DS game, DS titles before and past AM position 77. The emulator tests in `targets/*/*/tests/` pass. Not covered: DS titles past AM position 205 on the console (needs more than 205 DSiWare; covered in the emulator) and the error path of the two HOME Menu title scans.
+New 3DS XL, EUR 11.17.0-50E, Luma3DS, N = 256, 130 DSiWare, 2026-11-08: all icons (also in folders and on the top screen), Internet Browser, Miiverse and returning from it, sleep mode, theme shuffle with reboot, fast scrolling, a 3DS game, DS titles before and past AM position 77, and the System Settings list past 40 titles. Copying and deleting in System Settings ran only in the emulator. The emulator tests in `targets/*/*/tests/` pass. Not covered: DS titles past AM position 205 on the console (needs more than 205 DSiWare; covered in the emulator) and the error path of the two HOME Menu title scans.
 
 ## Repository layout
 
