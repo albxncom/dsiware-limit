@@ -1,0 +1,10 @@
+dumps/
+out/
+__pycache__/
+*.dis
+*.code
+*.dec.code
+*.bin
+!targets/*/*/caves/*.bin
+.DS_Store
+.ruff_cache/

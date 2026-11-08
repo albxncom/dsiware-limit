@@ -1,0 +1,26 @@
+diff --git a/Makefile b/Makefile
+index f3364d1..81a3b06 100644
+--- a/Makefile
++++ b/Makefile
+@@ -27,7 +27,7 @@ include $(DEVKITARM)/3ds_rules
+ #     - <libctru folder>/default_icon.png
+ #---------------------------------------------------------------------------------
+ 
+-APP_TITLE	:= NDS Forwarder Generator
++APP_TITLE	:= NDS Forwarder 256
+ APP_DESCRIPTION := Creates nds forwarders on the home menu
+ APP_AUTHOR := RandalHoffman
+ 
+diff --git a/source/menu.cpp b/source/menu.cpp
+index 834fbe2..650c752 100644
+--- a/source/menu.cpp
++++ b/source/menu.cpp
+@@ -15,7 +15,7 @@ extern "C" {
+ #include "helpers.hpp"
+ #include "lang.hpp"
+ 
+-#define MAX_DSIWARE 40
++#define MAX_DSIWARE 256
+ //class MenuSelection {
+ 
+     MenuSelection::MenuSelection(std::string s,std::filesystem::path p) {
